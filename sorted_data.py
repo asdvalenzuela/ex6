@@ -16,8 +16,8 @@ def restaurant_ratings(filename):
      #   print "Restaurant '%s' is rated %d." % (name, rating)
 
     #the following code will sort by numerical rating
-    for key, value in sorted(ratings_dict.items(), key = lambda restaurant: restaurant[1]):
-        print "Restaurant '%s' is rated %s." % (key, value)
+    for restaurant, rating in sorted(ratings_dict.items(), key = lambda restaurant: restaurant[1]):
+        print "Restaurant '%s' is rated %s." % (restaurant, rating)
 
 def main():
 
